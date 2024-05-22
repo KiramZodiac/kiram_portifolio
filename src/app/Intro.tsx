@@ -8,7 +8,7 @@ function Intro() {
       <div className=" text-2xl font-bold ">
         <h1>Hey, </h1>
         <h1>
-          Iam <span className=" text-blue-500">Kiram.</span>
+          I{"'"}am <span className=" text-blue-500">Kiram.</span>
         </h1>
         <h2>A Software Developer</h2>
         <Button />
