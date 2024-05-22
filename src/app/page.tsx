@@ -1,8 +1,8 @@
 import Image from "next/image";
 import NavBar from "./NavBar";
 import Intro from "./Intro";
-import Button from "@/Button";
-import Follow from "@/Follow";
+import Button from "@/app/Button";
+import Follow from "@/app/Follow";
 import { global } from "styled-jsx/css";
 
 export default function Home() {

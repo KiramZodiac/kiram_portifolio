@@ -1,4 +1,4 @@
-import Button from "@/Button";
+import Button from "@/app/Button";
 import React from "react";
 
 function Intro() {
