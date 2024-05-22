@@ -41,16 +41,16 @@ function Follow() {
 
       <ul>
         <li>
-          <Link href={""}>
+          <Link href={"tel:+256751214095"}>
             <BsTelephone />
           </Link>
         </li>
       </ul>
       <ul>
         <li>
-          <Link href={"Whatsapp:+256751214095"}>
+          <a href="https://api.whatsapp.com/send?phone=+256751214095">
             <BsWhatsapp />
-          </Link>
+          </a>
         </li>
       </ul>
     </div>
