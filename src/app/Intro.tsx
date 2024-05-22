@@ -1,4 +1,5 @@
 import Button from "@/app/Button";
+import Image from "next/image";
 import React from "react";
 
 function Intro() {
@@ -28,9 +29,11 @@ function Intro() {
           alignItems: "center", // Center the image within the circle
         }}
       >
-        <img
-          src="akram.jpg"
+        <Image
+          src="/akram.jpg"
           alt="Description"
+          width={300}
+          height={300}
           style={{
             width: "100%",
             height: "100%",
