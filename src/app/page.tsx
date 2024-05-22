@@ -7,7 +7,7 @@ import { global } from "styled-jsx/css";
 
 export default function Home() {
   return (
-    <div className=" pl-24">
+    <div className="">
       <NavBar />
       <main className=" justify-between p-20">
         <Intro />
