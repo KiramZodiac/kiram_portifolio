@@ -18,7 +18,7 @@ function page() {
               <div className="  col-md-6">
                 <Image
                   alt="my image"
-                  src="/ki3.jpeg"
+                  src="/akram.jpg"
                   width={500}
                   height={500}
                 />
