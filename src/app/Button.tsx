@@ -4,11 +4,11 @@ import Follow from "./Follow";
 
 function Button() {
   return (
-    <div className=" " style={{ padding: 20, paddingLeft: 40 }}>
+    <div className="" style={{ padding: 20 }}>
       <button
         style={{
           backgroundColor: "Blue",
-          width: 150,
+          width: 200,
           height: 40,
           borderRadius: 10,
           fontSize: 20,

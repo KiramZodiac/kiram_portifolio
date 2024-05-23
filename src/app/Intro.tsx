@@ -5,13 +5,15 @@ import React from "react";
 function Intro() {
   return (
     <div className=" pr-52">
-      <div className=" text-2xl font-bold ">
+      <div className=" text-2xl font-bold">
         <h1>Hey, </h1>
         <h1>
-          I{"'"}am <span className=" text-blue-500">Kiram.</span>
+          I{"'"}am <span className=" text-blue-500">Kiram Mageye.</span>
         </h1>
         <h2>A Software Developer</h2>
-        <Button />
+        <div className=" pt-20 pl-40">
+          <Button />
+        </div>
       </div>
 
       <div
