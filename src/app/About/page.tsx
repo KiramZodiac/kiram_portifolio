@@ -13,20 +13,8 @@ function page() {
           <h1>ABOUT ME</h1>
         </div>
         <div className=" flex">
-          <div className="">
-            <div className=" row">
-              <div className="  col-md-6">
-                {" "}
-                <Image
-                  alt="my image"
-                  src="/ki3.jpeg"
-                  width={500}
-                  height={500}
-                />
-              </div>
-            </div>
-          </div>
-
+          {" "}
+          <Image alt="my image" src="/ki3.jpeg" width={300} height={300} />
           <div className="col-sm-12 col-md-6">
             <div className="max-w-screen-lg">
               <div className=" justify-items-center pl-20 mt-48">
