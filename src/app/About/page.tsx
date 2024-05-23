@@ -15,7 +15,7 @@ function page() {
         <div className=" flex">
           <div className="">
             <div className=" row">
-              <div className=" col-sm-12 col-md-6">
+              <div className="  col-md-6">
                 <Image
                   alt="my image"
                   src="/ki3.jpeg"
@@ -26,7 +26,7 @@ function page() {
             </div>
           </div>
 
-          <div className="col-sm-12 col-md-6">
+          <div className=" col-md-6">
             <div className="max-w-screen-lg">
               <div className=" justify-items-center pl-20 mt-48">
                 <p>
