@@ -38,7 +38,7 @@ function page() {
                   other key programming languages. I specialize in web
                   development, mobile app development, backend development, etc.
                   My journey in software development began three years ago, and
-                  since then, I've been committed to honing my skills and
+                  since then, I{"'"}ve been committed to honing my skills and
                   staying updated with the latest industry trends
                 </p>
               </div>
