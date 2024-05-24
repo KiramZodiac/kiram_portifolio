@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsFacebook } from "react-icons/bs";
 import Follow from "./Follow";
 

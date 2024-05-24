@@ -13,8 +13,7 @@ function Follow() {
     <div
       className=" flex gap-5"
       style={{
-        paddingTop: 100,
-        marginLeft: 10,
+        paddingTop: 70,
       }}
     >
       <ul>

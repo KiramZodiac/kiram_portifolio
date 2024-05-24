@@ -4,7 +4,7 @@ import Home from "./page";
 
 function NavBar() {
   return (
-    <div className=" pr-14 pt-5 ">
+    <div className=" pt-5 pr-4 ">
       <div className="flex float-right gap-5 text-blue-500 font-bold  ">
         <ul>
           <li className=" hover:text-xl">
@@ -18,12 +18,7 @@ function NavBar() {
         </ul>
         <ul>
           <li className=" hover:text-xl">
-            <Link href="Skills">Skills</Link>
-          </li>
-        </ul>
-        <ul>
-          <li className=" hover:text-xl">
-            <Link href="Connect">Connect</Link>
+            <Link href="/Skills">Skills</Link>
           </li>
         </ul>
       </div>

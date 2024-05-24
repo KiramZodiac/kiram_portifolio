@@ -6,34 +6,36 @@ import Follow from "../Follow";
 
 function page() {
   return (
-    <div>
+    <div className="">
       <NavBar />
-      <div className=" p-20">
+      <div className="">
         <div className=" justify-items-center text-center text-2xl pt-10 font-bold">
           <h1>ABOUT ME</h1>
         </div>
         <div className=" flex">
-          <div className=" ">
-            <div className=" ">
-              {" "}
-              <Image alt="my image" src="/ki3.jpeg" width={300} height={300} />
-            </div>
+          <div className="  col-md-6">
+            {" "}
+            <Image alt="my image" src="/ki3.jpeg" width={500} height={500} />
           </div>
 
           <div className="col-sm-12 col-md-6">
             <div className="max-w-screen-lg">
-              <div className=" justify-items-center pl-20 mt-48">
+              <div className=" pt-40  text-center">
                 <p>
                   Hello! I{"'"}m{" "}
                   <span className=" font-bold">Akram Mageye,</span> a passionate
                   and dedicated software developer with a knack for creating
                   innovative and efficient solutions. With a solid foundation in
-                  Html,Css5, JavaScript,React,React-Native, Python, Java, and
-                  other key programming languages. I specialize in web
-                  development, mobile app development, backend development, etc.
-                  My journey in software development began three years ago, and
-                  since then, I{"'"}ve been committed to honing my skills and
-                  staying updated with the latest industry trends
+                  <span className=" text-blue-400">
+                    {" "}
+                    Html,Css5, JavaScript,React,React-Native, Python, Java, and
+                    other key programming languages.
+                  </span>{" "}
+                  I specialize in web development, mobile app development,
+                  backend development, etc. My journey in software development
+                  began three years ago, and since then, I{"'"}ve been committed
+                  to honing my skills and staying updated with the latest
+                  industry trends
                 </p>
               </div>
             </div>
