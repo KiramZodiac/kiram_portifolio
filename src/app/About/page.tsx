@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "../NavBar";
+
 import Image from "next/image";
 import Button from "../Button";
 import Follow from "../Follow";
@@ -7,7 +7,7 @@ import Follow from "../Follow";
 function page() {
   return (
     <div className="">
-      <NavBar />
+     
       <div className="">
         <div className=" justify-items-center text-center text-2xl pt-10 font-bold">
           <h1>ABOUT ME</h1>

@@ -1,10 +1,11 @@
-import Button from "@/app/Button";
+
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React from "react";
 
 function Intro() {
   return (
-    <div className=" pr-20">
+    <div className="">
       <div className=" text-2xl font-bold">
         <h1>Hey,</h1>
         <h1>
@@ -41,7 +42,7 @@ function Intro() {
           }}
         />
       </div>
-      <Button />
+      <Button className=" bg-blue-500">Connect</Button>
     </div>
   );
 }
