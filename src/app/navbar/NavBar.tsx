@@ -29,9 +29,9 @@ const links = [{
   return (
  <div className=" flex px-5 py-5  space-x-5 border-b text-2xl w-full bg-white fixed justify-center">
 {links.map((link)=>(
-  <ul>
+  <ul key={link.href}>
     <Link href={link.href}>
-    <li key={link.href} className={`${router === link.href ? ' text-blue-600 font-semibold':'text-gray-600 rounded'}`}>{link.label}</li>
+    <li  className={`${router === link.href ? ' text-blue-600 font-semibold':'text-gray-600 rounded'}`}>{link.label}</li>
     </Link>
   </ul>
 ))}
