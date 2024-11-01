@@ -31,7 +31,7 @@ const links = [{
 {links.map((link)=>(
   <ul>
     <Link href={link.href}>
-    <li className={`${router === link.href ? ' text-blue-600 font-semibold':'text-gray-600 rounded'}`}>{link.label}</li>
+    <li key={link.href} className={`${router === link.href ? ' text-blue-600 font-semibold':'text-gray-600 rounded'}`}>{link.label}</li>
     </Link>
   </ul>
 ))}
