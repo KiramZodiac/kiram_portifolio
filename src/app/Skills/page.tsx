@@ -1,9 +1,5 @@
-import React, { useEffect, useState } from "react";
 
-import { BsFiletypeJava, BsSubscript } from "react-icons/bs";
 
-import { BiSlider } from "react-icons/bi";
-import NavBar from "../NavBar";
 import Link from "next/link";
 import Follow from "../Follow";
 
@@ -15,7 +11,7 @@ interface skillsProps {
 
 const Skills = ({ tittle, value, rangeValue }: skillsProps) => {
   return (
-    <div className="">
+    <div className=" justify-center flex">
       <div className="flex gap-4 p-2 pl-16">
         <ul>
           <li>{tittle}</li>
@@ -30,9 +26,9 @@ const Skills = ({ tittle, value, rangeValue }: skillsProps) => {
 
 function page() {
   return (
-    <div>
-      <NavBar />
-      <h1 className=" text-2xl pt-10 font-bold p-10">MY SKILLS</h1>
+    <div className="  justify-center flex flex-col items-center h-screen">
+     
+      <h1 className=" text-2xl  font-bold ">MY SKILLS</h1>
       <div className=" pt-10 text-center font-bold">
         <div className="">
           <Skills tittle="HTML 5" value={95} rangeValue={"95%"} />
@@ -48,7 +44,7 @@ function page() {
         </div>
       </div>
 
-      <div className=" pl-10 ">
+      <div className=" ">
         <h1 className=" font-bold text-blue-950">My Projects on github</h1>
         <div className=" text-blue-400">
           <div className="">
@@ -74,7 +70,7 @@ function page() {
             </li>
           </div>
         </div>
-        <p>An many more in build!</p>
+        <p>And many more in build!</p>
       </div>
       <div className=" pl-12">
         <Follow />
