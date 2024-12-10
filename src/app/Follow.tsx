@@ -3,56 +3,55 @@ import React from "react";
 import {
   BsGithub,
   BsLinkedin,
+  
   BsTelephone,
   BsTwitter,
   BsWhatsapp,
 } from "react-icons/bs";
 
 function Follow() {
-  return (
-    <div
-      className=" flex gap-5"
-      style={{
-        paddingTop: 100,
-        marginLeft: 10,
-      }}
-    >
-      <ul>
-        <li>
-          <Link href={"https://www.linkedin.com/in/kiram-zodiac-78b292289/"}>
-            <BsGithub />
-          </Link>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <Link href={"https://www.linkedin.com/in/kiram-zodiac-78b292289/"}>
-            <BsLinkedin />
-          </Link>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <Link href={"https://x.com/KiramZodiac"}>
-            <BsTwitter />
-          </Link>
-        </li>
-      </ul>
 
-      <ul>
-        <li>
-          <Link href={""}>
-            <BsTelephone />
-          </Link>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <Link href={"Whatsapp:+256751214095"}>
-            <BsWhatsapp />
-          </Link>
-        </li>
-      </ul>
+  const socials =[
+    {
+    href:'https://www.linkedin.com/in/kiram-zodiac-78b292289/',
+
+    icon:<BsGithub/>
+  },
+  {
+    href:'https://www.linkedin.com/in/kiram-zodiac-78b292289/',
+
+    icon:<BsLinkedin/>
+  },
+  {
+    href:'https://x.com/nze_kiram',
+
+    icon:<BsTwitter/>
+  },
+  {
+    href:"tel:+256751214095",
+
+    icon:<BsTelephone/>
+  },
+  {
+    href:"https://api.whatsapp.com/send?phone=+256751214095",
+
+    icon:<BsWhatsapp/>
+  },
+ 
+]
+
+
+  return (
+    <div className="">
+<div className=" flex space-x-5 pt-10 justify-center ">
+  {socials.map((social)=>(
+  
+    <Link key={social.href} className=" text-blue-500 hover:text-gray-600" href={social.href}>
+      {social.icon}
+    </Link>
+    
+  ))}
+</div>
     </div>
   );
 }
