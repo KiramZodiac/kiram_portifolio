@@ -1,81 +1,104 @@
-
+'use client';
 
 import Link from "next/link";
 import Follow from "../Follow";
+import { Progress } from "@/components/ui/progress";
+import { useEffect, useState } from "react";
 
-interface skillsProps {
-  tittle: string;
+interface SkillsProps {
+  title: string;
   value: number;
-  rangeValue: string;
 }
 
-const Skills = ({ tittle, value, rangeValue }: skillsProps) => {
-  return (
-    <div className=" justify-center flex">
-      <div className="flex gap-4 p-2 pl-16">
-        <ul>
-          <li>{tittle}</li>
-        </ul>
+const Skills = ({ title, value }: SkillsProps) => {
+  const [progress, setProgress] = useState(0);
 
-        <input type="range" max={90} value={value} readOnly />
-        <span id="rangeValue">{rangeValue}</span>
+  useEffect(() => {
+    const timer = setTimeout(() => setProgress(value), 500);
+    return () => clearTimeout(timer);
+  }, [value]);
+
+  return (
+    <div className="py-2">
+      <div className="flex items-center justify-between space-x-4 border-b pb-2">
+        <span className="text-lg font-semibold text-gray-800">{title}</span>
+        <Progress value={progress || 0} className="w-3/5" />
       </div>
     </div>
   );
 };
 
-function page() {
+const projects = [
+  {
+    href: "https://github.com/KiramZodiac/Calculator_App",
+    label: "Calculator JS App",
+  },
+  {
+    href: "https://github.com/zonaster/zonaster-mobile-application/tree/feature/zon-14-create-homescreen",
+    label: "Zonaster Events App",
+  },
+  {
+    href: "https://mobilerepairpros.netlify.app",
+    label: "Mechanics Website",
+  },
+  {
+    href: "https://github.com/KiramZodiac/localStorage_todo",
+    label: "To-Do List App",
+  },
+  {
+    href: "https://github.com/KiramZodiac/next-recipe-app",
+    label: "Food Recipe App",
+  },
+];
+
+function Page() {
   return (
-    <div className="  justify-center flex flex-col items-center h-screen">
-     
-      <h1 className=" text-2xl  font-bold ">MY SKILLS</h1>
-      <div className=" pt-10 text-center font-bold">
-        <div className="">
-          <Skills tittle="HTML 5" value={95} rangeValue={"95%"} />
+    <div className="flex flex-col items-center  min-h-screen bg-gray-50">
+      <header className="py-6 pt-20">
+        <h1 className="text-4xl font-bold text-gray-900">My Skills</h1>
+      </header>
 
-          <Skills tittle="CSS 5" value={90} rangeValue={"90%"} />
-
-          <Skills tittle="JAVASCRIPT" value={80} rangeValue="90%" />
-          <Skills tittle="REACT" value={80} rangeValue={"80%"} />
-          <Skills tittle="REACT-NATIVE" value={80} rangeValue={"80%"} />
-          <Skills tittle="PYTHON" value={70} rangeValue={"70%"} />
-          <Skills tittle="GIT & GITHUB" value={95} rangeValue={"95%"} />
-          <Skills tittle="OOP PROGRAMMING" value={70} rangeValue={"70%"} />
-        </div>
-      </div>
-
-      <div className=" ">
-        <h1 className=" font-bold text-blue-950">My Projects on github</h1>
-        <div className=" text-blue-400">
-          <div className="">
-            <li>
-              <Link href={"https://github.com/KiramZodiac/Calculator_App"}>
-                Calculator js App
-              </Link>
-            </li>
-            <li>
-              <Link href="https://github.com/zonaster/zonaster-mobile-application/tree/feature/zon-14-create-homescreen">
-                Zonaster Events App
-              </Link>
-            </li>
-            <li>
-              <Link href="https://mobilerepairpros.netlify.app">
-                Mechanics Website
-              </Link>
-            </li>
-            <li>
-              <Link href="https://github.com/KiramZodiac/localStorage_todo">
-                To-Do list App
-              </Link>
-            </li>
+      <main className="w-full max-w-3xl ">
+        <section className="bg-white shadow-md rounded-lg p-6 mb-8">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4">Technical Skills</h2>
+          <div className="space-y-4">
+            <Skills title="HTML 5" value={95} />
+            <Skills title="CSS 5" value={90} />
+            <Skills title="JAVASCRIPT" value={80} />
+            <Skills title="REACT" value={80} />
+            <Skills title="NEXT JS" value={80} />
+            <Skills title="REACT-NATIVE" value={80} />
+            <Skills title="PYTHON" value={70} />
+            <Skills title="GIT & GITHUB" value={95} />
+            <Skills title="OOP-PROGRAMMING" value={95} />
           </div>
-        </div>
-        <p>And many more in build!</p>
-      </div>
-      <div className=" pl-12">
+        </section>
+
+        <section className="bg-white shadow-md rounded-lg p-6">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4">My Projects</h2>
+          <ul className="space-y-2">
+            {projects.map((project) => (
+              <li
+                key={project.href}
+                className="text-blue-600 hover:text-blue-800 hover:underline transition"
+              >
+                <Link href={project.href} target="_blank">
+                  {project.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <p className="text-gray-600 mt-4">
+            And many more in development! Please feel free to reach out to discuss opportunities or share ideas.
+          </p>
+        </section>
+      </main>
+
+      <footer className="py-8">
         <Follow />
-      </div>
+      </footer>
     </div>
   );
 }
-export default page;
+
+export default Page;

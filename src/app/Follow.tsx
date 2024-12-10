@@ -23,7 +23,7 @@ function Follow() {
     icon:<BsLinkedin/>
   },
   {
-    href:'https://x.com/KiramZodiac',
+    href:'https://x.com/nze_kiram',
 
     icon:<BsTwitter/>
   },

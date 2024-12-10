@@ -1,42 +1,37 @@
-'use client'
+'use client';
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 function NavBar() {
+  const activeRoute = usePathname();
 
-  const router = usePathname()
-console.log(router);
-
-
-
-const links = [{
-  label:'Home',
-  href:'/dashboard'
-},
-{
-  label:"About",
-  href:'/About'
-
-},
-{
-  label:'Skills',
-  href:'/Skills'
-}
-
-]
+  const links = [
+    { label: "Home", href: "/" },
+    { label: "About", href: "/About" },
+    { label: "Skills", href: "/Skills" },
+  ];
 
   return (
- <div className=" flex px-5 py-5  space-x-5 border-b text-2xl w-full bg-white fixed justify-center">
-{links.map((link)=>(
-  <ul key={link.href}>
-    <Link href={link.href}>
-    <li  className={`${router === link.href ? ' text-blue-600 font-semibold':'text-gray-600 rounded'}`}>{link.label}</li>
-    </Link>
-  </ul>
-))}
-
- </div>
+    <nav className="flex items-center justify-center px-5 py-3 border-b bg-white fixed top-0 left-0 right-0 z-50">
+      <ul className="flex space-x-8 text-lg">
+        {links.map((link) => (
+          <li key={link.href} className="list-none">
+            <Link href={link.href}
+              
+                className={`transition duration-200 ${
+                  activeRoute === link.href
+                    ? "text-blue-600 font-semibold border-b-2 border-blue-600"
+                    : "text-gray-600 hover:text-blue-500"
+                }`}
+            
+               > {link.label}
+            
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
 }
 

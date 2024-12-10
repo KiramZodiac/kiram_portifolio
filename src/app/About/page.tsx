@@ -1,53 +1,58 @@
 import React from "react";
-
 import Image from "next/image";
-import Button from "../Button";
 import Follow from "../Follow";
 
-function page() {
+function AboutPage() {
   return (
-    <div className="">
-     
-      <div className="">
-        <div className=" justify-items-center text-center text-2xl pt-10 font-bold">
-          <h1>ABOUT ME</h1>
-        </div>
-        <div className=" flex">
-          <div className="  col-md-6">
-            {" "}
-            <Image alt="my image" src="/ki3.jpeg" width={500} height={500} />
-          </div>
+    <div className="flex flex-col justify-center p-10 bg-gradient-to-b from-white to-gray-100 min-h-screen">
+      {/* Heading */}
+      <div className="text-center mb-10 max-sm:pt-10">
+        <h1 className="text-4xl font-bold text-gray-800">About Me</h1>
+      </div>
 
-          <div className="col-sm-12 col-md-6">
-            <div className="max-w-screen-lg">
-              <div className=" pt-40  text-center">
-                <p>
-                  Hello! I{"'"}m{" "}
-                  <span className=" font-bold">Akram Mageye,</span> a passionate
-                  and dedicated software developer with a knack for creating
-                  innovative and efficient solutions. With a solid foundation in
-                  <span className=" text-blue-400">
-                    {" "}
-                    Html,Css5, JavaScript,React,React-Native, Python, Java, and
-                    other key programming languages.
-                  </span>{" "}
-                  I specialize in web development, mobile app development,
-                  backend development, etc. My journey in software development
-                  began three years ago, and since then, I{"'"}ve been committed
-                  to honing my skills and staying updated with the latest
-                  industry trends
-                </p>
-              </div>
-            </div>
-          </div>
+      {/* Content Section */}
+      <div className="flex flex-col md:flex-row items-center justify-center gap-10">
+        {/* Image Section */}
+        <div className="rounded-lg overflow-hidden shadow-lg max-w-md">
+          <Image
+            alt="Akram Mageye"
+            src="/ki3.jpeg"
+            width={500}
+            height={500}
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Text Section */}
+        <div className="max-w-2xl text-center md:text-left">
+          <p className="text-gray-700 text-lg leading-relaxed">
+            Hello! I{"'"}m{" "}
+            <span className="font-bold text-blue-600">Akram Mageye</span>, a
+            passionate and dedicated software developer with a knack for
+            creating innovative and efficient solutions. With a solid foundation
+            in{" "}
+            <span className="font-semibold text-blue-500">
+              various programming languages
+            </span>
+            , I specialize in web development, mobile app development, backend
+            development, and more.
+          </p>
+          <p className="mt-5 text-gray-700 text-lg leading-relaxed">
+            My journey in software development began three years ago, and since
+            then, I{"'"}ve been committed to honing my skills and staying
+            updated with the latest industry trends. I strive to bring value to
+            every project I undertake and look forward to contributing to
+            meaningful software solutions.
+          </p>
         </div>
       </div>
-      <div className=" text-center flex">
-        <Button />
+
+      {/* Follow Section */}
+      <div className="mt-10 max-sm:mt-0">
         <Follow />
       </div>
     </div>
   );
 }
 
-export default page;
+export default AboutPage;
