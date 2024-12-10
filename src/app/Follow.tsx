@@ -43,7 +43,7 @@ function Follow() {
 
   return (
     <div className="">
-<div className=" flex space-x-5 pt-10 justify-center ">
+<div className=" flex space-x-5 pt-0 justify-center ">
   {socials.map((social)=>(
   
     <Link key={social.href} className=" text-blue-500 hover:text-gray-600" href={social.href}>

@@ -18,13 +18,11 @@ function NavBar() {
         {links.map((link) => (
           <li key={link.href} className="list-none">
             <Link href={link.href}
-              
                 className={`transition duration-200 ${
                   activeRoute === link.href
                     ? "text-blue-600 font-semibold border-b-2 border-blue-600"
                     : "text-gray-600 hover:text-blue-500"
                 }`}
-            
                > {link.label}
             
             </Link>
