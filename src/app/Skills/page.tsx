@@ -30,6 +30,10 @@ const Skills = ({ title, value }: SkillsProps) => {
 
 const projects = [
   {
+    href: "https://chefkiram.netlify.app",
+    label: "Food Recipe App",
+  },
+  {
     href: "https://github.com/KiramZodiac/Calculator_App",
     label: "Calculator JS App",
   },
@@ -45,10 +49,7 @@ const projects = [
     href: "https://github.com/KiramZodiac/localStorage_todo",
     label: "To-Do List App",
   },
-  {
-    href: "https://github.com/KiramZodiac/next-recipe-app",
-    label: "Food Recipe App",
-  },
+ 
 ];
 
 function Page() {
