@@ -34,6 +34,11 @@ const projects = [
     label: "Food Recipe App",
   },
   {
+    href: "https://akramtodo.netlify.app/",
+    label: "To-Do List App",
+  },
+ 
+  {
     href: "https://github.com/KiramZodiac/Calculator_App",
     label: "Calculator JS App",
   },
@@ -45,11 +50,7 @@ const projects = [
     href: "https://mobilerepairpros.netlify.app",
     label: "Mechanics Website",
   },
-  {
-    href: "https://github.com/KiramZodiac/localStorage_todo",
-    label: "To-Do List App",
-  },
- 
+  
 ];
 
 function Page() {
