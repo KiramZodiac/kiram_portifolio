@@ -29,6 +29,10 @@ const Skills = ({ title, value }: SkillsProps) => {
 };
 
 const projects = [
+  {href:"https://yomovies.vercel.app/",
+    label:"Movies App"
+  },
+
   {
     href: "https://chefkiram.netlify.app",
     label: "Food Recipe App",
@@ -46,10 +50,7 @@ const projects = [
     href: "https://github.com/zonaster/zonaster-mobile-application/tree/feature/zon-14-create-homescreen",
     label: "Zonaster Events App",
   },
-  {
-    href: "https://mobilerepairpros.netlify.app",
-    label: "Mechanics Website",
-  },
+
   
 ];
 
