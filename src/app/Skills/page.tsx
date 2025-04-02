@@ -67,9 +67,11 @@ function Page() {
           <div className="space-y-4">
             <Skills title="HTML 5" value={95} />
             <Skills title="CSS 5" value={90} />
-            <Skills title="JAVASCRIPT" value={80} />
-            <Skills title="REACT" value={80} />
-            <Skills title="NEXT JS" value={80} />
+
+            <Skills title="TAILWIND CSS" value={90} />
+            <Skills title="JAVASCRIPT" value={90} />
+            <Skills title="REACT" value={90} />
+            <Skills title="NEXT JS" value={90} />
             <Skills title="REACT-NATIVE" value={80} />
             <Skills title="PYTHON" value={70} />
             <Skills title="GIT & GITHUB" value={95} />

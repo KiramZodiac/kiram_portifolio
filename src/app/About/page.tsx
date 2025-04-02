@@ -7,7 +7,7 @@ function AboutPage() {
     <div className="flex flex-col justify-center p-10 bg-gradient-to-b from-white to-gray-100 min-h-screen">
       {/* Heading */}
       <div className="text-center mb-10 max-sm:pt-10">
-        <h1 className="text-4xl font-bold text-gray-800">About Me</h1>
+        <h1 className="text-4xl font-bold text-gray-800 pt-5">About Me</h1>
       </div>
 
       {/* Content Section */}

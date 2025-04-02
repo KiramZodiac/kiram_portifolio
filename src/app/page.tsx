@@ -7,14 +7,14 @@ export default function Home() {
       <main className="max-w-4xl w-full space-y-16">
         {/* Introduction Section */}
         <section>
-          <Intro />
+          <Intro/>
         </section>
 
         {/* Follow Section */}
         <section>
-          <Follow />
+        <Follow/>
         </section>
-      </main>
+        </main>
     </div>
   );
 }
