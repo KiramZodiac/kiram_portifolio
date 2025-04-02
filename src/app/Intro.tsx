@@ -8,9 +8,9 @@ function Intro() {
 
 
   return (
-    <div className=" flex flex-col items-center justify-center ">
-        <div className="text-center mb-10 max-sm:pt-20">
-        <h1 className="text-4xl font-bold text-gray-800 mb-2">Hey,</h1>
+    <div className=" flex flex-col items-center justify-center h-screen">
+        <div className="text-center  max-sm:pt-20">
+        <h1 className="text-4xl font-bold text-gray-800 mb-2 pt-14">Hey,</h1>
         <h1 className="text-4xl font-bold text-gray-800 mb-2">
           I{"'"}m <span className="text-blue-500">Akram Mageye.</span>
         </h1>

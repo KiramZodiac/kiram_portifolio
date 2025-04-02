@@ -22,11 +22,11 @@ function Follow() {
 
     icon:<BsLinkedin/>
   },
-  {
-    href:'https://x.com/nze_kiram',
+  // {
+  //   href:'https://x.com/nze_kiram',
 
-    icon:<BsTwitter/>
-  },
+  //   icon:<BsTwitter/>
+  // },
   {
     href:"tel:+256751214095",
 
@@ -42,7 +42,7 @@ function Follow() {
 
 
   return (
-    <div className="">
+    <div className=" mb-10">
 <div className=" flex space-x-5 pt-5 justify-center ">
   {socials.map((social)=>(
   
