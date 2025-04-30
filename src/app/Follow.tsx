@@ -5,7 +5,7 @@ import {
   BsLinkedin,
   
   BsTelephone,
-  BsTwitter,
+
   BsWhatsapp,
 } from "react-icons/bs";
 
@@ -22,11 +22,7 @@ function Follow() {
 
     icon:<BsLinkedin/>
   },
-  // {
-  //   href:'https://x.com/nze_kiram',
-
-  //   icon:<BsTwitter/>
-  // },
+ 
   {
     href:"tel:+256751214095",
 
@@ -46,7 +42,7 @@ function Follow() {
 <div className=" flex space-x-5 pt-5 justify-center ">
   {socials.map((social)=>(
   
-    <Link key={social.href} className=" text-blue-500 hover:text-gray-600" href={social.href}>
+    <Link key={social.href} className=" text-blue-500 hover:text-gray-600 " href={social.href}>
       {social.icon}
     </Link>
     

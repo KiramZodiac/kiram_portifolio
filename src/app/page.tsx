@@ -11,6 +11,7 @@ export default function Home() {
         </section>
 
         {/* Follow Section */}
+        
         <section>
         <Follow/>
         </section>

@@ -1,56 +1,65 @@
-import React from "react";
-import Image from "next/image";
-import Follow from "../Follow";
+'use client';
+import React from 'react';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+import Follow from '../Follow';
 
 function AboutPage() {
   return (
-    <div className="flex flex-col justify-center p-10 bg-gradient-to-b from-white to-gray-100 min-h-screen">
+    <div className="min-h-screen px-6 md:px-20 py-16 bg-gradient-to-b from-white to-gray-100">
       {/* Heading */}
-      <div className="text-center mb-10 max-sm:pt-10">
-        <h1 className="text-4xl font-bold text-gray-800 pt-5">About Me</h1>
-      </div>
+      <motion.h1
+        initial={{ opacity: 0, y: -30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-12"
+      >
+        About Me
+      </motion.h1>
 
       {/* Content Section */}
-      <div className="flex flex-col md:flex-row items-center justify-center gap-10">
-        {/* Image Section */}
-        <div className="rounded-lg overflow-hidden shadow-lg max-w-md">
+      <div className="flex flex-col md:flex-row items-center gap-10 max-w-6xl mx-auto">
+        {/* Image */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          className="rounded-xl overflow-hidden shadow-xl w-80 h-80 md:w-[400px] md:h-[400px]"
+        >
           <Image
-            alt="Akram Mageye"
             src="/ki3.jpeg"
+            alt="Akram Mageye"
             width={500}
             height={500}
             className="w-full h-full object-cover"
           />
-        </div>
+        </motion.div>
 
-        {/* Text Section */}
-        <div className="max-w-2xl text-center md:text-left">
-          <p className="text-gray-700 text-lg leading-relaxed">
-            Hello! I{"'"}m{" "}
-            <span className="font-bold text-blue-600">Akram Mageye</span>, a
-            passionate and dedicated software developer with a knack for
-            creating innovative and efficient solutions. With a solid foundation
-            in{" "}
-            <span className="font-semibold text-blue-500">
-              various programming languages
-            </span>
-            , I specialize in web development, mobile app development, backend
-            development, and more.
+        {/* Text */}
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-center md:text-left max-w-2xl"
+        >
+          <p className="text-lg text-gray-700 leading-relaxed mb-6">
+            Hello! I{"'"}m <span className="font-bold text-blue-600">Akram Mageye</span>, a passionate software developer with a love for building beautiful, functional, and efficient digital products.
           </p>
-          <p className="mt-5 text-gray-700 text-lg leading-relaxed">
-            My journey in software development began three years ago, and since
-            then, I{"'"}ve been committed to honing my skills and staying
-            updated with the latest industry trends. I strive to bring value to
-            every project I undertake and look forward to contributing to
-            meaningful software solutions.
+          <p className="text-lg text-gray-700 leading-relaxed">
+            With strong experience in <span className="font-semibold text-blue-500">web & mobile development</span>, I specialize in React, Next.js, Node.js, Supabase, and modern tools. My focus is on solving real-world problems with clean, scalable code and continuous learning.
           </p>
-        </div>
+        </motion.div>
       </div>
 
       {/* Follow Section */}
-      <div className="mt-10 max-sm:mt-0">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, delay: 0.3 }}
+        className="mt-16 text-center"
+      >
         <Follow />
-      </div>
+      </motion.div>
     </div>
   );
 }
