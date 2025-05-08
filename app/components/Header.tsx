@@ -85,8 +85,8 @@ const Header = () => {
                 {link.title}
               </Link>
             ))}
-            <Link href={'/resum.pdf'} download={true} className="mt-2 w-screen ">
-              <Button >Resume</Button>
+            <Link href={'/resum.pdf'} download={true} className="mt-2 w-screen">
+              <Button className=' w-1/2'>Resume</Button>
             </Link >
           </div>
         </nav>
