@@ -5,6 +5,19 @@ import { Button } from '@/components/ui/button';
 
 const Projects = () => {
   const projectData = [
+
+
+    
+    {
+      title: "Find Your Perfect Stay – Travel Booking Platform",
+      description: "A responsive travel booking platform where users can discover unique places to stay around the world. The site features a visually engaging hero section, smooth in-page navigation, and a clean, modern UI built with Tailwind CSS. This project demonstrates front-end development skills including responsive design, component structuring, and user-focused layouts",
+      image: "/listing.png",
+      tags: ["React", "Next.js", "Supabase", "Tailwind CSS"],
+      liveUrl: "https://stayhubhomes.vercel.app/",
+      githubUrl: "https://github.com/KiramZodiac/stayhub-nomad-homes-site"
+    },
+
+
     {
       title: "Yomovies App –",
       description: "A movie browsing app built with Next.js, featuring dynamic routing, movie previews, and responsive design.",
